@@ -9,13 +9,16 @@ public class PointN {
     }
 
     // Não altera porque é constante
-    void setY(int y) {
-        this.y = y;
-    }
-
-    public static void main(String[] args) {
-        PointN p = new PointN();
-        p.y = 12;
-        System.out.println("x = " + p.x + " y = " + p.y);
-    }
+    /*
+     * void setY(int y) {
+     * this.y = y;
+     * }
+     */
+    /*
+     * public static void main(String[] args) {
+     * PointN p = new PointN();
+     * p.y = 12;
+     * System.out.println("x = " + p.x + " y = " + p.y);
+     * }
+     */
 }
