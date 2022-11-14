@@ -1,6 +1,7 @@
 package prog21oop.Alist;
 
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.ArrayList;
 
 public class Alist1 {
