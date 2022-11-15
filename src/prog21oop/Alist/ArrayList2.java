@@ -75,5 +75,33 @@ public class ArrayList2 {
         // hasPrevious() - Verifica se existe um elemento anterior
         System.out.println("Iteração com ListIterator");
         ListIterator<String> listNomes = listaNomes.listIterator(listaNomes.size());
+
+        while (listNomes.hasPrevious()) {
+            String nome = listNomes.previous();
+            System.out.println("IL -> " + nome);
+        }
+
+        /*
+         * Index
+         * Pesquisa de elementos num ArrayList contains() - Verifica se um elemento
+         * existe
+         * na lista indexOf() - Devolve o indice do elemento na lista
+         * lastIndexOf() - Devolve o indice do ultimo elemento na lista
+         */
+
+        boolean hasMaria = listaNomes.contains("Maria");
+        System.out.println("Maria existe? " + hasMaria);
+
+        int iRui = listaNomes.indexOf("Rui");
+        System.out.println("Rui esta na posição: " + iRui);
+
+        // Encontra todas as oc.
+        Iterator<String> iterator4 = listaNomes.iterator();
+        while (iterator4.hasNext()) {
+            String nome4 = iterator4.next();
+            if (nome4.startsWith("A")) {
+                System.out.println("Encontrei o nome que começa com A");
+            }
+        }
     }
 }
