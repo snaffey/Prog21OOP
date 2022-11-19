@@ -2,6 +2,7 @@ package prog21oop.Desafio15112022;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class CarrinhoCompras {
 
@@ -13,6 +14,14 @@ public class CarrinhoCompras {
 
     public void removerProduto(produto produto) {
         produtos.remove(produto);
+    }
+
+    public boolean isEmpty() {
+        return produtos.isEmpty();
+    }
+
+    public int size() {
+        return produtos.size();
     }
 
     public void listarProdutos() {
